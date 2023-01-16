@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="top-inf">
+                <p>100 TL ve üzeri kargo bedava+koşulsuz ve 365 gün değişim/iade garantisi</p>
+            </div>
+            <div class="page-nav">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+                <input type="search" placeholder="Ara">
+                <span class="user-inf"><a href="#">Mustafa</a> olarak giriş yapıldı</span>
+                <button class="exit-button">Çıkış yap</button>
+                <div class="nav-right">
+                    <button class="cart-button"><i class="fas fa-shopping-cart"></i> Alışveriş Sepeti<label class="add-numb">(0)</label></button>
+                    <button class="payment-button">Ödeme</button>
+                </div>
+            </div>
+            <div class="page-nav-mobile">
+                <div class="top-nav">
+                    <button class="search-button-mobile"><i class="fas fa-search"></i></button>
+                    <button class="cart-button-mobile"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <button class="bar-button"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul class="category-list">
+                <li class="category-item"><a href="#">Ana sayfa</a></li>
+                <li class="category-item"><a href="#">Katalog</a></li>
+                <li class="category-item"><a href="#">Özel Baskılı T-Shirt</a></li>
+                <li class="category-item"><a href="#">Hakkımızda</a></li>
+                <li class="category-item"><a href="#">Sık Sorulan Sorular</a></li>
+                <li class="category-item"><a href="#">İletişim</a></li>
+                <li class="category-item"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i
+                            class="fab fa-instagram"></i></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="product-img">
+                <div class="destination-way">
+                    <span><a href="#">Ana sayfa</a> > CSS Sucks T-Shirt</span>
+                </div>
+                <img src="https://cdn.shopify.com/s/files/1/0066/9212/products/css_600x600.jpg?v=1596741930"
+                    alt="CSS Sucks T-Shirt">
+            </div>
+            <div class="product-details">
+                <div class="product-title">
+                    <h1 id="product-name">CSS Sucks T-Shirt</h1>
+                </div>
+                <div class="product-price">
+                    <label id="product-price">59.00 TL</label>
+                </div>
+                <div class="payment-details">
+                    <label>Vergiler dahil <a href="#">Kargo</a> ödeme adımında hesaplanacak.</label>
+                </div>
+                <div class="size-select">
+                    <h5>Size</h5>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xlarge">xLarge</option>
+                        <option value="2xlarge">2xLarge</option>
+                        <option value="3xlarge">3xLarge</option>
+                    </select>
+                </div>
+                <div class="pieces">
+                    <h5>Adet</h5>
+                    <input type="number" id="points" name="points" step="1" placeholder="1">
+                </div>
+                <div class="add-button">
+                    <button id="add-btn">Sepete Ekle</button>
+                </div>
+                <div class="buy-button">
+                    <button>Hemen Satın Alın</button>
+                </div>
+                <div class="social-media">
+                    <span><a href="#"><i class="fab fa-facebook-square"></i> Paylaş</a></span>
+                    <span><a href="#"><i class="fab fa-twitter"></i> Tweet</a></span>
+                    <span><a href="#"><i class="fab fa-pinterest"></i> Pinle</a></span>
+                </div>
+            </div>
+            <div class="size-table">
+                <h3>Beden tablosu</h3>
+                <table>
+                    <tr class="tr1">
+                        <td></td>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                        <td>2XL</td>
+                        <td>3XL</td>
+                    </tr>
+                    <tr class="tr2">
+                        <td>En(cm)</td>
+                        <td>49</td>
+                        <td>51</td>
+                        <td>53</td>
+                        <td>55</td>
+                        <td>57</td>
+                        <td>59</td>
+                    </tr>
+                    <tr class="tr3">
+                        <td>Boy(cm)</td>
+                        <td>71</td>
+                        <td>73</td>
+                        <td>75</td>
+                        <td>77</td>
+                        <td>79</td>
+                        <td>81</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="col1">
+                <ul class="footer-list">
+                    <h3>Yardım</h3>
+                    <li><a href="#">Mesafeli Satış Sözleşmesi</a></li>
+                    <li><a href="#">Teslimat</a></li>
+                    <li><a href="#">Gizlilik</a></li>
+                    <li><a href="#">İptal & İade</a></li>
+                </ul>
+            </div>
+            <div class="col2">
+                <h3>İletişim</h3>
+                <p>kuzgun.io ile ilgili herhangi bir konuda bilgi almak, istek, öneri ve şikayetler için <br> <a
+                        href="#">info@kuzgun.io</a> adresine mail atabilirsiniz.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var add = document.getElementById("add-btn");
+        add.addEventListener("click", function () {
+            var prName = document.getElementById("product-name").innerHTML;
+            var prPrice = document.getElementById("product-price").innerHTML;
+            var prSize = document.getElementById("size").value;
+            var prPieces = document.getElementById("points").value;
+            // var price = 59.00;
+            // var totalPrice = price * document.getElementById("points").value;
+
+            var summary = "Ürün Bilgisi:" + "\n";
+            summary += "Ürün İsmi::" + prName + "\n";
+            summary += "Ürün Fiyatı:" + prPrice + "\n";
+            summary += "Ürün Bedeni:" + prSize + "\n";
+            summary += "Ürün Adedi:" + prPieces + "\n";
+            summary += "Toplam Fiyat:" + (parseFloat(prPrice) * parseFloat(prPieces)) + "TL" + "\n"; //kısa yolu!!!!
+            summary += "SEPETE EKLENDİ."
+            alert(summary);
+        });
+        
+        var addBtn = document.getElementById("add-btn");
+
+        addBtn.addEventListener("click", function() {
+            
+        });
+
+
+
+    </script>
+</body>
+
+</html>
